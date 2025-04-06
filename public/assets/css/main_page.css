@@ -1,0 +1,96 @@
+.my-photo-section {
+    margin-top: 30px;
+}
+
+.info-aboutme, 
+.contact-info, 
+.lab-number {
+    padding: 40px;
+    margin-top: 20px;
+}
+.info-aboutme, 
+.contact-info {
+    background-color: #e7f4ff;
+}
+
+.my-photo{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #9bc5ea;
+    margin-top: 20px;
+}
+
+.info-container,
+.laba-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.group-name,
+.laba-number-name {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    text-align: center;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    hyphens: auto; 
+    position: relative;
+    overflow: hidden;
+}
+
+.group-name::before,
+.laba-number-name::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(26, 115, 232, 0.1), transparent);
+    transition: top 0.3s ease-out;
+}
+
+.group-name:hover::before,
+.laba-number-name:hover::before {
+    top: 0;
+}
+
+.group-name:hover,
+.laba-number-name:hover {
+    transform: translateY(-10px);
+}
+
+.group-name i,
+.laba-number-name i {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.group-name h3,
+.laba-number-name h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.group-name p,
+.laba-number-name p {
+    font-weight: bold;
+    font-size: 2.1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50%; 
+}

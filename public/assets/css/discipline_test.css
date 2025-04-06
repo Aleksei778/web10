@@ -1,0 +1,117 @@
+.test-section, 
+.contact-info {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.test-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    text-align: center;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    hyphens: auto; 
+    position: relative;
+    overflow: hidden;
+}
+
+.test-form::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(26, 115, 232, 0.1), transparent);
+    transition: top 0.3s ease-out;
+}
+
+.test-form:hover::before {
+    top: 0;
+}
+
+.test-form:hover {
+    transform: translateY(-10px);
+}
+
+.test-form i {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.test-form h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.test-form p {
+    font-weight: bold;
+    font-size: 1.1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #1a73e8;
+}
+
+button[type="button"] {
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+label:not(#not-label) {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

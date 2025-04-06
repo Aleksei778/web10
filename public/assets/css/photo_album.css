@@ -1,0 +1,23 @@
+.photoalbum-section, 
+.contact-info {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.photo-item {
+    margin-top: 20px;
+}
+
+img:not(.main_menu-image) {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid #1a73e8;
+}
+
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

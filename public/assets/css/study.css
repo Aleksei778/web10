@@ -1,0 +1,109 @@
+.univer-section,
+.disps-section,
+.contact-info {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.univer {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    text-align: center;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    hyphens: auto; 
+    position: relative;
+    overflow: hidden;
+}
+
+.disp-table {
+    display: flex;
+    justify-content: center;
+}
+
+.univer::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(26, 115, 232, 0.1), transparent);
+    transition: top 0.3s ease-out;
+}
+
+.univer:hover::before {
+    top: 0;
+}
+
+.univer:hover {
+    transform: translateY(-10px);
+}
+
+.univer i {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.univer h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.univer p {
+    font-weight: bold;
+    font-size: 1.1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50%;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+table thead {
+    background-color: #1a73e8;
+    color: white;
+}
+
+table thead th {
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+.table-wrapper {
+    border: 2px solid #1a73e8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(26, 115, 232, 0.2);
+}
