@@ -8,3 +8,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Перенаправляем запросы вида main/index в index.php?controller=main&action=index
 RewriteRule ^([^/]+)/([^/]+)$ index.php?controller=$1&action=$2 [QSA,L]
+
+RewriteRule ^admin/(.*)/(.*) index.php?controller=$1&action=$2&admin_area=1 [QSA]
